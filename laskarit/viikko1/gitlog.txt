@@ -1,0 +1,30 @@
+
+commit 7a55d3179adeb167a2323a8da272c34b76c725da (HEAD -> master)
+Author: JVS23 <juhosiren23@gmail.com>
+Date:   Tue Nov 9 22:33:56 2021 +0200
+
+    final
+
+ tiedostoja/file2.txt                 | 0
+ tiedostoja/{file1.txt => file22.txt} | 0
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+
+commit 7261af5acdb7fa341964d0f03ce2134eab228bea
+Author: JVS23 <juhosiren23@gmail.com>
+Date:   Tue Nov 9 22:31:06 2021 +0200
+
+    files
+
+ tiedostoja/file1.txt | 0
+ tiedostoja/file2.txt | 0
+ tiedostoja/file3.txt | 0
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+
+commit 7dedd0b403cbe86bb420e058c0bbd36eaed2a978
+Author: JVS23 <juhosiren23@gmail.com>
+Date:   Tue Nov 9 22:27:45 2021 +0200
+
+    p
+
+ eka.txt    | 2 +-
+ kolmas.txt | 2 +-
