@@ -7,4 +7,4 @@ aika **mielenkiintoinen** *kurssi* jos multa kysytään
 [komentorivi](https://github.com/JVS23/ot-harjoitustyo/blob/master/laskarit/viikko1/komentorivi.txt)
 
 
-testimuutos
+testimuutos synkronivirhe
