@@ -1,10 +1,10 @@
 # Vaatimusmäärittely 
 
-Sovelluksen tarkoitus
+## Sovelluksen tarkoitus
 
 Sovelluksen on tarkoitus antaa käyttäjän pelata kaikkien rakastamaa Yatzy-lautapeliä tietokoneellansa. Yatzyn säännöt: https://www.lautapeliopas.fi/saannot/yatzy/.
 
-Suunnitellut toiminnallisuudet
+## Suunnitellut toiminnallisuudet
 
 - Pelin pelaaminen
 - Sääntöjen muuttaminen

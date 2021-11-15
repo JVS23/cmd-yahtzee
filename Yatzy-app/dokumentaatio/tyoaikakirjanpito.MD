@@ -1,3 +1,7 @@
 # Työaikakirjanpito
 
-5 tuntia  15/11/2021
+
+| päivä | tunnit | aihe  |
+| :----:|:-----| :-----|
+| 16.11 | 2    | työympäristön valmistelu, dokumentaatiot yms kuntoon |
+| yht   | 2  | | 
