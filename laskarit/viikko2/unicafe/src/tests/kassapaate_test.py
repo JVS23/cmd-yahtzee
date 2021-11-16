@@ -6,6 +6,7 @@ class TestKassapaate(unittest.TestCase):
 
     def setUp(self):
         self.kassapaate = Kassapaate()
+        self.kortti = Maksukortti(10000)
 
 
     def tarkasta_kassapaate(self, raha, edu, mau):
@@ -27,6 +28,6 @@ class TestKassapaate(unittest.TestCase):
         self.tarkasta_kassapaate(100000, 0, 0,)
 
     def test_kassapaate_korttimaksu_riittava(self):
-        self.maksukortti = Maksukortti(10000)
-        self.kassapaate.syo_maukkaasti_kortilla(self.maksukortti)
-        self.tarkasta_kassapaate(100400, 0, 1,)
+
+        self.kassapaate.syo_maukkaasti_kortilla(self.kortti)
+        self.tarkasta_kassapaate(100000, 0, 1,)
