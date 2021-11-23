@@ -1,5 +1,10 @@
 import random as r
 
+# class Dice:
+#    def __init__(self):
+#        self.dice_list = []
+#        self.reroll_amount = 0
+
 
 def roll():
     dice_list = []
@@ -22,13 +27,13 @@ def choose(dice_list):
     print("choose the dice to reroll")
     print(dice_list)
     choices = []
-    AA = [1, 2, 3, 4, 5]
+    INDEXES = [1, 2, 3, 4, 5]
 
     while state:
         print("choose the dice to reroll by index, quit with 7")
         user_input = int(input())
 
-        if user_input not in AA or user_input in choices:
+        if user_input not in INDEXES or user_input in choices:
             break
         choices.append(user_input)
 
@@ -37,6 +42,3 @@ def choose(dice_list):
 
     print(dice_list)
     return dice_list
-
-
-# def AAprint(dice_list)
