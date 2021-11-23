@@ -1,7 +1,7 @@
 import random as r
 
 
-# Refaktoroin myöhemmin luokaksi
+# File refactored into a class later
 # class Dice:
 #    def __init__(self):
 #        self.dice_list = []
@@ -32,7 +32,7 @@ def choose(dice_list):
     INDEXES = [1, 2, 3, 4, 5]
 
     while state:
-        print("choose the dice to reroll by index, quit with 7")
+        print("choose the dice to reroll by index, move to next roll with 7")
         user_input = int(input())
 
         if user_input not in INDEXES or user_input in choices:

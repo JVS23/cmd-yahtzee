@@ -2,9 +2,9 @@ import dice
 
 
 def main():
-    dice1 = dice.roll()
-    dice.choose(dice1)
-    dice.choose(dice1)
+    rolled_dice = dice.roll()
+    dice.choose(rolled_dice)
+    dice.choose(rolled_dice)
 
 
 main()

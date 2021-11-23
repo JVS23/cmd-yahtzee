@@ -1,7 +1,7 @@
 from invoke import task
 
-# Tämän kanssa Windowsilla jotakin ongelmia, terminaalilla hankaluuksia lukea inputteja.
-# normaalisti Pythonilla runnatessa toimii tosin normaalisti.
+# startin kanssa Windowsilla jokin bugi, terminaalilla hankaluuksia lukea inputteja.
+# normaalisti Pythonilla sekä Cubblilla runnatessa toimii tosin normaalisti.
 
 
 @task
