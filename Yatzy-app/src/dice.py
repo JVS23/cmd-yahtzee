@@ -1,5 +1,7 @@
 import random as r
 
+
+# Refaktoroin myöhemmin luokaksi
 # class Dice:
 #    def __init__(self):
 #        self.dice_list = []
