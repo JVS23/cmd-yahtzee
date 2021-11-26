@@ -1,10 +1,11 @@
-import dice
+from dice import Dice
 
 
 def main():
-    rolled_dice = dice.roll()
-    dice.choose(rolled_dice)
-    dice.choose(rolled_dice)
+    dice_set1 = Dice()
+    dice_set1.roll()
+    dice_set1.choose()
+    dice_set1.choose()
 
 
 main()
