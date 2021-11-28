@@ -7,4 +7,5 @@
 | 22.11 | 3   | poetryn ja linuxin kanssa tappelua, esivalmisteluja projektiin  |
 | 23.11 | 6    | noppien toiminnan logiikka valmiiksi |
 | 23.11 | 2    | unittestaus alkuun ja invoke testattu & toiminnassa |
-| yht   | 13  | | 
+| 26.11 | 3    | pylint käyttöön + koodin refaktorointia |
+| yht   | 16  | | 

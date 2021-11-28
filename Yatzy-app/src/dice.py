@@ -40,3 +40,6 @@ class Dice:
 
         print("Your new dice: ", self.dice_list)
         return self.dice_list
+
+    def print(self):
+        return self.dice_list
