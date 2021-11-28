@@ -1,21 +1,27 @@
 from dice import Dice
-from scorelogic import Categories as C
+from scorelogic import Categories
+from player import Player
 
 
 def main():
-    player_score = C()
+
+    player = Player("Juho")
+    player_score = Categories()
     dice_set1 = Dice()
 
     dice_set1.roll()
 
     dice_set1.choose()
     dice_set1.choose()
+
     # fixthis
     test_set = dice_set1.print()
-    player_score.check_for_aces(test_set)
-    print("---"*10)
-    player_score.check_for_twos(test_set)
+
+    gained_score = player_score.check_for_fives(test_set)
+    player.add_score(gained_score)
     #
+
+    player.print_score()
 
 
 main()
