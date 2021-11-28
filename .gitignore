@@ -2,3 +2,9 @@
 /laskarit/viikko2/unicafe/__pycache__
 /laskarit/viikko2/unicafe/.coverage
 /laskarit/viikko2/unicafe/htmlcov
+
+/Yatzy-app/htmlcov
+/Yatzy-app/.pylintrc
+/Yatzy-app/.pytest_cache
+/Yatzy-app/.coverage
+/Yatzy-app/src/__pycache__

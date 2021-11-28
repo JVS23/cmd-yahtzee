@@ -8,12 +8,14 @@ def main():
 
     dice_set1.roll()
 
+    dice_set1.choose()
+    dice_set1.choose()
     # fixthis
     test_set = dice_set1.print()
-    player_score.test_checking(test_set)
-
-    dice_set1.choose()
-    dice_set1.choose()
+    player_score.check_for_aces(test_set)
+    print("---"*10)
+    player_score.check_for_twos(test_set)
+    #
 
 
 main()
