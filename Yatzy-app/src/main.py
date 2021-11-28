@@ -7,17 +7,17 @@ def main():
 
     player = Player("Juho")
     player_score = Categories()
-    dice_set1 = Dice()
+    dice_set = Dice()
 
-    dice_set1.roll()
+    dice_set.roll()
 
-    dice_set1.choose()
-    dice_set1.choose()
+    dice_set.choose()
+    dice_set.choose()
 
     # fixthis
-    test_set = dice_set1.print()
+    test_set = dice_set.print()
 
-    gained_score = player_score.three_of_a_kind(test_set)
+    gained_score = player_score.check_chance(test_set)
     player.add_score(gained_score)
     #
 
