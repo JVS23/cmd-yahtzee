@@ -1,6 +1,6 @@
 # Yatzy-App
  
- Sovelluksella on tarkoitus pelata Yatzya, toistaiseksi komentorivillä ja myöhemmin graafisen käyttöliittymän kautta.
+ Sovelluksella on tarkoitus pelata Yatzya, toistaiseksi komentorivillä ja seuraavalla viikolla pygamella rakennetun graafisen käyttöliittymän kautta. Sovellus toimii tällä hetkellä komentoriviltä käytännössä kokonaan, mutta jätin tarkoituksella lisäämättä liikaa toimintoja sillä pygameen siirtyessä tulee luultavasti suuri osa käyttöliittymästä kirjoitettua uudestaan kuitenkin.
  
 
 

@@ -9,4 +9,5 @@
 | 23.11 | 2    | unittestaus alkuun ja invoke testattu & toiminnassa |
 | 26.11 | 3    | pylint käyttöön + koodin refaktorointia |
 | 29.11 | 5    | uudet luokat pelaajille ja pisteytykselle|
-| yht   | 21  | | 
+| 30.11 | 4    | placeholder-käyttöliittymä mainiin pygamen korvattavaksi |
+| yht   | 25   |  |
