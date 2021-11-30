@@ -2,7 +2,24 @@
  
  Sovelluksella on tarkoitus pelata Yatzya, toistaiseksi komentorivillä ja myöhemmin graafisen käyttöliittymän kautta.
  
- [Säännöt](https://en.wikipedia.org/wiki/Yatzy#Gameplay)
+
+
+## Säännöt
+
+Säännöt pohjautuvat vahvasti pohjoismaisen Yatzyn [sääntöihin](https://fi.wikipedia.org/wiki/Yatzy), sillä muunnelmalla että tässä tapauksessa ei tarvitse päättää etukäteen mitä yhdistelmää hakee takaa.
+
+## Python
+
+Sovellus on kehitetty sekä testattu Python 3.8:lla.
+
+## Asennus
+
+1. Suorita "poetry install" komento juurihakemistossa
+
+2. Käynnistä sovellus komennolla "poetry run invoke start"
+
+Vaihtoehtoisesti varsinkin Windowsilla suosittelen käyttämään sovellusta pythonilla
+avaamalla sen komennolla "main.py" src-hakemistossa.
 
 
 ## Dokumentaatio 
@@ -10,3 +27,7 @@
 
 [Työaikakirjanpito](https://github.com/JVS23/ot-harjoitustyo/blob/master/Yatzy-app/dokumentaatio/tyoaikakirjanpito.MD)
 
+## Testaus 
+
+Komennoilla "poetry run invoke test" ja "poetry run invoke coverage-report"
+voidaan testata sovellusta sekä generoida testausraportti
