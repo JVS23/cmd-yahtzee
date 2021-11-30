@@ -8,4 +8,5 @@
 | 23.11 | 6    | noppien toiminnan logiikka valmiiksi |
 | 23.11 | 2    | unittestaus alkuun ja invoke testattu & toiminnassa |
 | 26.11 | 3    | pylint käyttöön + koodin refaktorointia |
-| yht   | 16  | | 
+| 29.11 | 5    | uudet luokat pelaajille ja pisteytykselle|
+| yht   | 21  | | 

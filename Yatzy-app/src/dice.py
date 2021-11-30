@@ -11,7 +11,7 @@ class Dice:
         for _ in range(5):
             self.dice_list.append(r.randint(1, 6))
 
-        print("you rolled", self.dice_list)
+        print("you rolled", self.dice_list, "\n")
         return self.dice_list
 
     def reroll(self, i):
@@ -22,7 +22,6 @@ class Dice:
 
     def choose(self):
         state = True
-        print("choose the dice to reroll")
         print(self.dice_list)
         choices = []
         indexes = [1, 2, 3, 4, 5]
@@ -38,8 +37,11 @@ class Dice:
         for i in choices:
             self.reroll(i)
 
-        print("Your new dice: ", self.dice_list)
+        print("\nYour new dice: ", self.dice_list, "\n")
         return self.dice_list
+
+    def dicelist_reset(self):
+        self.dice_list = []
 
     def print(self):
         return self.dice_list

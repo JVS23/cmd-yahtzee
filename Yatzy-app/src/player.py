@@ -14,4 +14,7 @@ class Player:
             self.score = self.score + 50
 
     def print_score(self):
-        print(self.name, "'s total score is: ", self.score)
+        print(self.name, "'s current total score is: ", self.score)
+
+    def print_final_score(self):
+        print(self.name, "'s final score is: ", self.score, ", good job!")

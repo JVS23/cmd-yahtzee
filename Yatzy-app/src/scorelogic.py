@@ -3,9 +3,6 @@ class Categories:
     def __init__(self):
         pass
 
-    def test_checking(self, dice_list):
-        print("test dice: ", dice_list)
-
     def check_aces(self, dice_list):
 
         score = dice_list.count(1)
@@ -124,4 +121,5 @@ class Categories:
 
     def check_chance(self, dice_list):
 
+        print("Your score for Chance is: ", sum(dice_list))
         return sum(dice_list)
