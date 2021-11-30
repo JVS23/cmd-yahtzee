@@ -18,7 +18,7 @@ Sovellus on kehitetty sekä testattu Python 3.8:lla.
 
 2. Käynnistä sovellus komennolla "poetry run invoke start"
 
-Vaihtoehtoisesti varsinkin Windowsilla suosittelen käyttämään sovellusta pythonilla
+Vaihtoehtoisesti varsinkin Windowsilla suosittelen käyttämään sovellusta Pythonilla
 avaamalla sen komennolla "main.py" src-hakemistossa.
 
 
