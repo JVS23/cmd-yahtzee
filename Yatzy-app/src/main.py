@@ -13,7 +13,7 @@ def main():
 
     for i in range(15):
 
-        print("\n ---Roll number", i + 1, "---\n")
+        print("\n ---Roll number", i + 1, "/ 15---\n")
 
         dice_set.roll()
 
@@ -22,7 +22,7 @@ def main():
 
         # replaced with pygame integration soon, useless to flesh out further currently
 
-        print("What category do you want to choose? (only works with Ones to Threes not do dilute the code needlessly)")
+        print("What category do you want to choose? (only works with Ones to Threes to not dilute the code needlessly)\n")
         method_list = [func for func in dir(player_score) if callable(
             getattr(player_score, func)) and not func.startswith("__")]
 
