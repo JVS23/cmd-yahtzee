@@ -1,12 +1,15 @@
+
 from dice import Dice
 from scorelogic import Categories
 from player import Player
 
 
+# TODO: kbinput error, end, make scoreboard
+
 def main():
 
-    print("What's your name?")
-    name_input = input()
+    # print("What's your name?")
+    name_input = "test"  # input()
     player = Player(name_input)
     player_score = Categories()
     dice_set = Dice()
@@ -20,41 +23,34 @@ def main():
         dice_set.choose()
         dice_set.choose()
 
-        # replaced with pygame integration soon, useless to flesh out further currently
+        print("Which category do you want to choose?\n")
 
-        print("What category do you want to choose?", 
-             "(only works with Ones to Threes to not dilute the code needlessly)\n")
-        method_list = [func for func in dir(player_score) if callable(
-            getattr(player_score, func)) and not func.startswith("__")]
-
-        print(method_list)
+        print("aces | twos | threes | fours | fives | sixes")
+        print("one pair | two pairs | three of a kind | four of a kind | yatzy | chance")
+        print("full house | low straight | high straight")
 
         user_input = str(input())
 
-        if user_input == "check_aces":
+        if user_input == "aces":
 
-            test_set = dice_set.print()
+            current_dice = dice_set.print()
 
-            gained_score = player_score.check_aces(test_set)
+            gained_score = player_score.check_aces(current_dice)
             player.add_score(gained_score)
-            player.print_score()
 
-        if user_input == "check_twos":
+        if user_input == "twos":
 
-            test_set = dice_set.print()
+            current_dice = dice_set.print()
 
-            gained_score = player_score.check_twos(test_set)
+            gained_score = player_score.check_twos(current_dice)
             player.add_score(gained_score)
-            player.print_score()
 
-        if user_input == "check_threes":
+        if user_input == "threes":
 
-            test_set = dice_set.print()
+            current_dice = dice_set.print()
 
-            gained_score = player_score.check_threes(test_set)
+            gained_score = player_score.check_threes(current_dice)
             player.add_score(gained_score)
-            player.print_score()
-            #
 
         dice_set.dicelist_reset()
 
