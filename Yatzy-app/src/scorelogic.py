@@ -51,8 +51,22 @@ class Categories:
 
         print("Your score for Two pairs is: ", score)
         return score
+#######################################
 
-#   def check_two_pairs(self, dice_list):
+    def check_two_pairs(self, dice_list):
+
+        score = 0
+
+        dice_list.sort()
+
+        if (len(set(dice_list))) != 3 or 2:
+            return score
+
+        if dice_list[0] != dice_list[3] or dice_list[1] != dice_list[4]:
+            score = sum(dice_list)
+            return score
+
+        return score
 
     def check_three_of_a_kind(self, dice_list):
 
@@ -93,7 +107,20 @@ class Categories:
         print("Your score for Yatzy is: ", score)
         return score
 
-#   def check_full_house(self, dice_list):
+    def check_full_house(self, dice_list):
+
+        score = 0
+
+        dice_list.sort()
+
+        if (len(set(dice_list))) != 2:
+            return score
+
+        if dice_list[0] != dice_list[3] or dice_list[1] != dice_list[4]:
+            score = sum(dice_list)
+            return score
+
+        return score
 
     def check_low_straight(self, dice_list):
 
