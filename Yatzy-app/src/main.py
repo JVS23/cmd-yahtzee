@@ -27,7 +27,7 @@ def main():
 
         print("aces | twos | threes | fours | fives | sixes")
         print("one pair | two pairs | three of a kind | four of a kind | yatzy | chance")
-        print("full house | low straight | high straight")
+        print("full house | low straight | high straight \n")
 
         user_input = str(input())
 
@@ -36,23 +36,24 @@ def main():
             current_dice = dice_set.print()
 
             gained_score = player_score.check_aces(current_dice)
-            player.add_score(gained_score)
+            player.add_score(gained_score, user_input)
 
         if user_input == "twos":
 
             current_dice = dice_set.print()
 
             gained_score = player_score.check_twos(current_dice)
-            player.add_score(gained_score)
+            player.add_score(gained_score, user_input)
 
         if user_input == "threes":
 
             current_dice = dice_set.print()
 
             gained_score = player_score.check_threes(current_dice)
-            player.add_score(gained_score)
+            player.add_score(gained_score, user_input)
 
         dice_set.dicelist_reset()
+        player.print_scoreboard()
 
     player.print_final_score()
 

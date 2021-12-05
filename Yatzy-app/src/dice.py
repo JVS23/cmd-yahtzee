@@ -11,7 +11,7 @@ class Dice:
         for _ in range(5):
             self.dice_list.append(r.randint(1, 6))
 
-        print("you rolled", self.dice_list, "\n")
+        print("You rolled", self.dice_list, "\n")
         return self.dice_list
 
     def reroll(self, i):
@@ -27,7 +27,7 @@ class Dice:
         indexes = [1, 2, 3, 4, 5]
 
         while state:
-            print("choose the dice to reroll by index, move to next roll with 7")
+            print("Choose the dice to reroll by index, move to next roll with 7")
             user_input = int(input())
 
             if user_input not in indexes or user_input in choices:

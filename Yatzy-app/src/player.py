@@ -1,3 +1,4 @@
+from tabulate import tabulate
 
 
 class Player:
@@ -8,9 +9,19 @@ class Player:
                            "One pair": 0, "Two pairs": 0, "Three of a kind": 0, "Four of a kind": 0, "Yatzy": 0,
                            "Full house": 0, "Low straight": 0, "High straight": 0, "Chance": 0}
 
-    def add_score(self, score):
+    def add_score(self, score, input):
         self.total_score += score
-        print(self.name, "'s current total score is: ", self.total_score)
+        print(self.name, "'s current total score is: ", self.total_score, "\n")
+
+        cap_input = str(input).capitalize()
+        if cap_input in self.scoreboard.keys():
+            self.scoreboard.update({cap_input: score})
+        else:
+            print("Error, category doesn't exist")
+
+    def print_scoreboard(self):
+        hds = ["Categories", "Score"]
+        print(tabulate(self.scoreboard.items(), headers=hds))
 
     def check_For_bonus(self):
 
