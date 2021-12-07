@@ -4,7 +4,6 @@ import random as r
 class Dice:
     def __init__(self):
         self.dice_list = []
-        self.reroll_amount = 0
 
     def roll(self):
 

@@ -1,8 +1,17 @@
 import unittest
 from dice import Dice
 
-class TestRollDice(unittest.TestCase):
+
+class TestDice(unittest.TestCase):
+    def setUp(self):
+        self.dice = Dice()
+
     def test_roll(self):
-        test_dice = Dice()
-        list_of_five = test_dice.roll()
-        self.assertEqual(5, len(list_of_five))
+        self.dice.roll()
+        self.assertEqual(5, len(self.dice.print()))
+
+    def test_dicelist_reset(self):
+
+        self.dice.roll()
+        self.dice.dicelist_reset()
+        self.assertEqual(0, len(self.dice.print()))

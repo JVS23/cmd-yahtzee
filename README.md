@@ -32,4 +32,6 @@ avaamalla sen komennolla "main.py" src-hakemistossa.
 ## Testaus 
 
 Komennoilla "poetry run invoke test" ja "poetry run invoke coverage-report"
-voidaan testata sovellusta sekä generoida testausraportti, main toistaiseksi pois sillä se on suurimmilta osin UI:ta, ensiviikon toteutuksessa eritytän UI:n omaan tiedostoonsa.
+voidaan testata sovellusta sekä generoida testausraportti.
+Sovelluksessa on käytössä myös pylint, jota voi testata poetry shellissä komennolla pylint src. 
+Main on toistaiseksi poisluettu testauksesta sillä se on suurimmilta osin UI:ta, ensiviikon toteutuksessa eritytän UI:n omaan tiedostoonsa.
