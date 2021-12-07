@@ -14,9 +14,11 @@ Sovellus on kehitetty sekä testattu Python 3.8:lla.
 
 ## Asennus
 
-1. Suorita "poetry install" komento juurihakemistossa
+1. Suorita "poetry install" komento juurihakemistossa (Varmistathan, että sinulla on poetry asennettuna)
 
 2. Käynnistä sovellus komennolla "poetry run invoke start"
+
+Muistathan myös käyttää tarpeellisia prefixejä komennoissa systeemistäsi riippuen, kuten "python -m" tai "python3 -m"
 
 Vaihtoehtoisesti varsinkin Windowsilla suosittelen käyttämään sovellusta Pythonilla
 avaamalla sen komennolla "main.py" src-hakemistossa.
