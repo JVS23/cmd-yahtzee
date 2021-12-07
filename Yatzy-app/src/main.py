@@ -5,12 +5,10 @@ from player import Player
 from tabulate import tabulate
 
 
-# TODO: better inputs,
-
 def main():
 
-    # print("What's your name?")
-    name_input = "test"  # input()
+    print("What's your name?")
+    name_input = input()
     player = Player(name_input)
     player_score = Categories()
     dice_set = Dice()
@@ -32,9 +30,9 @@ def main():
         print("one pair | two pairs | three of a kind | four of a kind | yatzy | chance")
         print("full house | low straight | high straight \n")
 
-        x = True
+        inputmode = True
 
-        while x == True:
+        while inputmode == True:
             user_input = str(input())
 
             current_dice = []
@@ -158,7 +156,7 @@ def main():
                 dice_set.dicelist_reset()
                 player.print_scoreboard()
                 player.print_score()
-                x = False
+                inputmode = False
 
     player.print_final_score()
 

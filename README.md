@@ -1,6 +1,6 @@
-# Yatzy-App
+# Commandline-Yatzy-App
  
- Sovelluksella on tarkoitus pelata Yatzya, toistaiseksi komentorivillä ja seuraavalla viikolla pygamella rakennetun graafisen käyttöliittymän kautta. Sovellus toimii tällä hetkellä komentoriviltä käytännössä kokonaan, mutta jätin tarkoituksella lisäämättä liikaa toimintoja sillä pygameen siirtyessä tulee luultavasti suuri osa käyttöliittymästä kirjoitettua uudestaan kuitenkin.
+ Sovelluksella on tarkoitus pelata Yatzya ~~toistaiseksi~~ pysyvästi komentorivillä. Sovelluksen alkuvaiheessa tuli suunniteltua rakenne hieman huonosti, ja kun aloin lisäämään UI:ta, huomasin että Pythonin kanssa projektia olisi kannattanut jo heti alusta alkaen rakentaa UI mielessä. Luulen että tämä virhearvio johtui aiemmasta kokemuksesta JavaScriptin web appien kanssa, joissa myöhemmin UI:n rakentaminen toimii hieman paremmin. Ainakin tuli kantapään kautta opittua suunnittelun tärkeys.
  
 
 
