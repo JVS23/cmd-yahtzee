@@ -28,12 +28,11 @@ class Player:
 
     def check_for_bonus(self):
 
-        print("bonus check")
         if int((self.scoreboard["Aces"])) + int((self.scoreboard["Twos"])) + int((self.scoreboard["Threes"])) + int((self.scoreboard["Fours"])) + \
                 int((self.scoreboard["Fives"])) + int((self.scoreboard["Sixes"])) >= 63:
-            self.total_score = self.total_score + 50
-            print("You got the bonus! + 50 points")
+            print("You got the bonus! + 50 points\n")
+            self.add_score(50, "Bonus")
 
     def print_final_score(self):
-        print(self.name, "'s final score is: ",
+        print(self.name, "'s final score is:",
               self.total_score, ", good job!")

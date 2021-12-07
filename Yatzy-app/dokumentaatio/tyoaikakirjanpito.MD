@@ -10,4 +10,8 @@
 | 26.11 | 3    | pylint käyttöön + koodin refaktorointia |
 | 29.11 | 5    | uudet luokat pelaajille ja pisteytykselle|
 | 30.11 | 4    | placeholder-käyttöliittymä mainiin pygamen korvattavaksi |
-| yht   | 25   |  |
+| 3.12 | 2    | GUI:n suunnittelu, vaihto tkinterin käyttöön pygamesta. |
+| 4.12 | 4    | tkinterin alku ja tuho |
+| 5.12 | 4   | cmd-käyttöliittymän parantelu (+tabulate)|
+| 5.12 | 5   | bugfixejä, yleistä logiikan parantelua |
+| yht   | 40  |  |

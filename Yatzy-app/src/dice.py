@@ -25,10 +25,18 @@ class Dice:
         print(self.dice_list)
         choices = []
         indexes = [1, 2, 3, 4, 5]
+        user_input = ""
 
         while state:
-            print("Choose the dice to reroll by index, move to next roll with 7")
-            user_input = int(input())
+            print(
+                "Choose the dice to reroll by index (+1), move to next roll with 7")
+            while True:
+                try:
+                    user_input = int(input())
+                except:
+                    print("Invalid input, try again")
+                    continue
+                break
 
             if user_input not in indexes or user_input in choices:
                 break

@@ -43,29 +43,29 @@ class Categories:
 
         score = 0
 
-        for i in dice_list:
-            if dice_list.count(i) >= 2:
-                score = i * 2
-                print("Your score for Two pairs is: ", score)
-                return score
+        dice_list.sort()
 
-        print("Your score for Two pairs is: ", score)
+        if dice_list[3] == dice_list[4]:
+            score = dice_list[4] * 2
+            print("Your score for One pair is: ", score)
+            return score
+
+        print("Your score for One pair is: ", score)
         return score
-#######################################
 
     def check_two_pairs(self, dice_list):
 
         score = 0
 
         dice_list.sort()
+        print(dice_list)
 
-        if (len(set(dice_list))) != 3 or 2:
+        if (dice_list[0] == dice_list[1] and dice_list[2] == dice_list[3]) or (dice_list[0] == dice_list[1] and dice_list[3] == dice_list[4]) or (dice_list[1] == dice_list[2] and dice_list[3] == dice_list[4]):
+            score = sum(dice_list) - dice_list[4]
+            print("Your score for Two pairs is: ", score)
             return score
 
-        if dice_list[0] != dice_list[3] or dice_list[1] != dice_list[4]:
-            score = sum(dice_list)
-            return score
-
+        print("Your score for Two pairs is: ", score)
         return score
 
     def check_three_of_a_kind(self, dice_list):
