@@ -2,7 +2,6 @@
 from dice import Dice
 from scorelogic import Categories
 from player import Player
-from tabulate import tabulate
 
 
 def main():
