@@ -11,7 +11,9 @@ class Player:
 
     def add_score(self, score, input):
         self.total_score += score
-        print(self.name, "'s current total score is: ", self.total_score, "\n")
+        print(self.name, "'s current total score is: ",
+              self.total_score, "\n", sep="")
+        print("\n")
 
         cap_input = str(input).capitalize()
         if cap_input in self.scoreboard.keys():
@@ -20,7 +22,8 @@ class Player:
             print("Error, category doesn't exist")
 
     def print_score(self):
-        print(self.name, "'s current total score is: ", self.total_score, "\n")
+        print(self.name, "'s current total score is: ",
+              self.total_score, "\n", sep="")
 
     def print_scoreboard(self):
         hds = ["Categories", "Score"]
@@ -35,4 +38,4 @@ class Player:
 
     def print_final_score(self):
         print(self.name, "'s final score is:",
-              self.total_score, ", good job!")
+              self.total_score, ", good job!", sep="")
