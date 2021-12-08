@@ -21,7 +21,7 @@ Sovellus on kehitetty sekä testattu Python 3.8:lla.
 Muistathan myös käyttää tarpeellisia prefixejä komennoissa systeemistäsi riippuen, kuten "python -m" tai "python3 -m"
 
 Vaihtoehtoisesti varsinkin Windowsilla suosittelen käyttämään sovellusta Pythonilla
-avaamalla sen komennolla "main.py" src-hakemistossa. Muistathan asentaa tabulaten komennolla pip install tabulate tässä tapauksessa.
+avaamalla sen komennolla "main.py" src-hakemistossa. Muistathan asentaa tabulaten komennolla "pip install tabulate" tässä tapauksessa.
 
 
 ## Dokumentaatio 
