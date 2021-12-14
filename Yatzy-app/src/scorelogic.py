@@ -1,5 +1,8 @@
 
 class Categories:
+    """A class for checking the dice against different scoring categories.
+    """
+
     def __init__(self):
         pass
 

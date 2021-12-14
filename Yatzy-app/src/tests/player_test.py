@@ -16,4 +16,4 @@ class TestPlayer(unittest.TestCase):
         self.player.print_score()
         captured = self.capsys.readouterr()
         self.assertEqual(
-            ("Tester 's current total score is:  0 \n\n"), captured.out)
+            ("Tester's current total score is: 0\n\n"), captured.out)

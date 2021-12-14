@@ -4,6 +4,9 @@ from player import Player
 
 
 class UI:
+    """A class for generating the actual game loop
+    """
+
     def __init__(self):
         pass
 

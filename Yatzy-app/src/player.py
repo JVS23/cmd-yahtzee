@@ -2,7 +2,19 @@ from tabulate import tabulate
 
 
 class Player:
+    """A class for creating player objects.
+
+    Attributes:
+        name: The name of the newly created player.
+    """
+
     def __init__(self, name):
+        """The class constructor, initialized the player object
+
+        Args:
+            name: The name of the newly created player.
+        """
+
         self.name = name
         self.total_score = 0
         self.scoreboard = {"Aces": 0, "Twos": 0, "Threes": 0, "Fours": 0, "Fives": 0, "Sixes": 0, "Bonus": 0,

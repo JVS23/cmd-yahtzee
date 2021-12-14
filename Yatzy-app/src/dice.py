@@ -2,10 +2,18 @@ import random as r
 
 
 class Dice:
+    """A class for creating the dice list and performing dice actions.
+    """
+
     def __init__(self):
         self.dice_list = []
 
     def roll(self):
+        """Fills an empty list with 5 dice.
+
+        Returns:
+            A list of five randomized dice.
+        """
 
         for _ in range(5):
             self.dice_list.append(r.randint(1, 6))
