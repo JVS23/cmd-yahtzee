@@ -15,4 +15,4 @@ avaamalla sen komennolla "main.py" src-hakemistossa. Muistathan asentaa tabulate
 
 ## Ohjelman toiminta
 
-Consolen ohjeilla pääsee pitkälle, ja tässä vielä [säännöt ja pisteytysmenetelmät](https://fi.wikipedia.org/wiki/Yatzy#P%C3%B6yt%C3%A4kirja) sitä kaipaaville.
+Consolen ohjeilla pääsee pitkälle, ja tässä vielä [säännöt ja pisteytysmenetelmät](https://fi.wikipedia.org/wiki/Yatzy#P%C3%B6yt%C3%A4kirja) niitä kaipaaville.
