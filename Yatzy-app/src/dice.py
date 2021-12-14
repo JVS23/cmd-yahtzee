@@ -22,12 +22,24 @@ class Dice:
         return self.dice_list
 
     def reroll(self, i):
+        """Rerolls the chosen dice from the current list.
+
+        Args:
+            i: the indexes of the dice which will be rerolled.
+        """
+
         try:
             self.dice_list[i - 1] = r.randint(1, 6)
         except:
             print("An error occurred")
 
     def choose(self):
+        """The method where the user chooses which dice they want to reroll.
+
+        Returns:
+            The new dice list after the chosen dice have been rerolled.
+        """
+
         state = True
         print(self.dice_list)
         choices = []
@@ -55,7 +67,10 @@ class Dice:
         print("\nYour new dice: ", self.dice_list, "\n")
         return self.dice_list
 
-    def dicelist_reset(self):
+    def dice_list_reset(self):
+        """Resets the current dice list.
+        """
+
         self.dice_list = []
 
     def print(self):

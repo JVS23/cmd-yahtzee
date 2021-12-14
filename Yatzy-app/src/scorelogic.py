@@ -7,6 +7,15 @@ class Categories:
         pass
 
     def check_aces(self, dice_list):
+        """Checks the given dice list against this scoring category, in this instance ones.
+            This docstring describes all the methods in this class.
+
+        Args:
+            dice_list: the dice list which the score will be decided on.
+
+        Returns:
+            A score which will be saved to the current players scoreboard.
+        """
 
         score = dice_list.count(1)
         print("Your score for Aces is: ", score)
