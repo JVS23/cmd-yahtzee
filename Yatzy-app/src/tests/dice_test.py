@@ -20,9 +20,6 @@ class TestDice(unittest.TestCase):
         self.dice.dice_list_reset()
         self.assertEqual(0, len(self.dice.print()))
 
-
-# Vinkkejä otetaan vastaan, antaa ModuleNotFoundError
-
     @patch('builtins.input', return_value='1')
     def test_dice_list_choose(self, mock_input):
 
