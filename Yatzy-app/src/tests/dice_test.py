@@ -21,13 +21,12 @@ class TestDice(unittest.TestCase):
         self.assertEqual(0, len(self.dice.print()))
 
 
-'''
-Vinkkejä otetaan vastaan, antaa ModuleNotFoundError
-  @patch('?????.get_input', return_value='1')
-    def test_dice_list_choose(self, input):
+# Vinkkejä otetaan vastaan, antaa ModuleNotFoundError
+
+    @patch('builtins.input', return_value='1')
+    def test_dice_list_choose(self, mock_input):
 
         self.dice_list = [1, 2, 3, 4, 5]
 
-        self.dice.choose()
+        new_dice = self.dice.choose()
         self.assertNotEqual([1, 2, 3, 4, 5], self.dice.print())
-'''
