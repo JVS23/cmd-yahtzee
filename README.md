@@ -29,7 +29,7 @@ avaamalla sen komennolla "main.py" src-hakemistossa. Muistathan asentaa tabulate
 
 ## Dokumentaatio 
 
-[Käyttöohje]((https://github.com/JVS23/ot-harjoitustyo/blob/master/Yatzy-app/dokumentaatio/kayttoohje.MD))
+[Käyttöohje](https://github.com/JVS23/ot-harjoitustyo/blob/master/Yatzy-app/dokumentaatio/kayttoohje.MD)
 
 [Määrittelydokumentti](https://github.com/JVS23/ot-harjoitustyo/blob/master/Yatzy-app/dokumentaatio/vaatimusmaarittely.MD)
 
