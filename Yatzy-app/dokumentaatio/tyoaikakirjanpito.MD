@@ -14,4 +14,7 @@
 | 4.12 | 4    | tkinterin alku ja tuho |
 | 5.12 | 4   | cmd-käyttöliittymän parantelu (+tabulate)|
 | 5.12 | 5   | bugfixejä, yleistä logiikan parantelua |
-| yht   | 40  |  |
+| 13.12 | 2   | UI:n refaktorointia |
+| 14.12 | -  | UI:n rakentaminen uudelleen omaan luokkaansa, testien parantelua |
+| 14.12 | 1  | docstringit, bugfixejä, dokumentaation parantelua |
+| yht   | 42  |  |

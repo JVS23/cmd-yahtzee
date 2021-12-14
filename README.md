@@ -14,9 +14,11 @@ Sovellus on kehitetty sekä testattu Python 3.8:lla.
 
 ## Asennus
 
-1. Suorita "poetry install" komento juurihakemistossa (Varmistathan, että sinulla on poetry asennettuna)
+1. Lataa uusin release [täältä](https://github.com/JVS23/ot-harjoitustyo/releases) valitsemassasi muodossa Assets-osiosta.
 
-2. Käynnistä sovellus komennolla "poetry run invoke start"
+2. Suorita "poetry install" komento sovelluksen juurihakemistossa (Varmistathan, että sinulla on poetry asennettuna)
+
+3. Käynnistä sovellus komennolla "poetry run invoke start"
 
 Muistathan myös käyttää tarpeellisia prefixejä komennoissa systeemistäsi riippuen, kuten "python -m" tai "python3 -m"
 
@@ -24,7 +26,11 @@ Vaihtoehtoisesti varsinkin Windowsilla suosittelen käyttämään sovellusta Pyt
 avaamalla sen komennolla "main.py" src-hakemistossa. Muistathan asentaa tabulaten komennolla "pip install tabulate" tässä tapauksessa.
 
 
+
 ## Dokumentaatio 
+
+[Käyttöohje]((https://github.com/JVS23/ot-harjoitustyo/blob/master/Yatzy-app/dokumentaatio/kayttoohje.MD))
+
 [Määrittelydokumentti](https://github.com/JVS23/ot-harjoitustyo/blob/master/Yatzy-app/dokumentaatio/vaatimusmaarittely.MD)
 
 [Työaikakirjanpito](https://github.com/JVS23/ot-harjoitustyo/blob/master/Yatzy-app/dokumentaatio/tyoaikakirjanpito.MD)

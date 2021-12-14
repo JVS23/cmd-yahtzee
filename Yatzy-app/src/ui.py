@@ -2,6 +2,8 @@ from dice import Dice
 from scorelogic import Categories
 from player import Player
 
+# TODO   multiple players
+
 
 class UI:
     """A class for generating the actual game loop
@@ -13,11 +15,21 @@ class UI:
     def start(self):
         self.run_ui()
 
+    def create_player(self):
+
+        while True:
+
+            print("What's your name?")
+            name_input = input()
+            if len(name_input) > 0 and len(name_input) < 20:
+                new_player = Player(name_input)
+                return new_player
+            else:
+                print("ERROR: Pick a name with a character length of 1-20 characters\n")
+
     def run_ui(self):
 
-        print("What's your name?")
-        name_input = input()
-        player = Player(name_input)
+        player = self.create_player()
         player_score = Categories()
         dice_set = Dice()
 
