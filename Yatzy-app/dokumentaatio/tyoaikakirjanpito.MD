@@ -17,4 +17,5 @@
 | 13.12 | 2   | UI:n refaktorointia |
 | 14.12 | 4  | UI:n rakentaminen uudelleen omaan luokkaansa, testien parantelua |
 | 14.12 | 2  | docstringit, bugfixejä, dokumentaation parantelua, pylintin ehdotuksia|
-| yht   | 48  |  |
+| 22.12 | 4  | viimeisimmät puutteet hoidettu, ui paranneltu|
+| yht   | 52  |  |
