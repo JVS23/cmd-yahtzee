@@ -7,4 +7,5 @@
 /Yatzy-app/.pytest_cache
 /Yatzy-app/.coverage
 /Yatzy-app/src/__pycache__
+/Yatzy-app/src/.pytest_cache
 /Yatzy-app/src/tests/__pycache__
