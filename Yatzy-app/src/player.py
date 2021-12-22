@@ -17,21 +17,34 @@ class Player:
 
         self.name = name
         self.total_score = 0
-        self.scoreboard = {"Aces": 0, "Twos": 0, "Threes": 0, "Fours": 0, "Fives": 0, "Sixes": 0, "Bonus": 0,
+        self.scoreboard = {"Aces": 0,  "Twos": 0, "Threes": 0, "Fours": 0, "Fives": 0, "Sixes": 0, "Bonus": 0,
                            "One pair": 0, "Two pairs": 0, "Three of a kind": 0, "Four of a kind": 0, "Yatzy": 0,
                            "Full house": 0, "Low straight": 0, "High straight": 0, "Chance": 0}
+        self.scoreboardcheck = {"Aces": 0,  "Twos": 0, "Threes": 0, "Fours": 0, "Fives": 0, "Sixes": 0, "Bonus": 0,
+                                "One pair": 0, "Two pairs": 0, "Three of a kind": 0, "Four of a kind": 0, "Yatzy": 0,
+                                "Full house": 0, "Low straight": 0, "High straight": 0, "Chance": 0}
 
     def add_score(self, score, input):
-        self.total_score += score
-        print(self.name, "'s current total score is: ",
-              self.total_score, "\n", sep="")
-        print("\n")
 
         cap_input = str(input).capitalize()
+
         if cap_input in self.scoreboard.keys():
-            self.scoreboard.update({cap_input: score})
+            if int((self.scoreboardcheck[cap_input])) == 0:
+                self.scoreboardcheck.update({cap_input: 1})
+                self.scoreboard.update({cap_input: score})
+                self.total_score += score
+
+                print("Your score for", cap_input, "is:", score)
+                print(self.name, "'s current total score is: ",
+                      self.total_score, "\n", sep="")
+                print("\n")
+                return True
+            else:
+                print("Already chosen, choose another category")
+                return False
         else:
             print("Error, category doesn't exist")
+            return False
 
     def print_score(self):
         print(self.name, "'s current total score is: ",

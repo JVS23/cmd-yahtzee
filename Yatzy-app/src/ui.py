@@ -74,68 +74,95 @@ class UI:
             user_input = str(input())
 
             current_dice = []
+            chosen_check = []
 
             if user_input == "aces":
 
                 current_dice = dice_set.print()
 
                 gained_score = categories.check_aces(current_dice)
-                player.add_score(gained_score, user_input)
-                player.check_for_bonus()
+                if player.add_score(gained_score, user_input):
+                    player.check_for_bonus()
+                else:
+                    chosen_check = [13]
+                    current_dice = []
 
             if user_input == "twos":
 
                 current_dice = dice_set.print()
 
                 gained_score = categories.check_twos(current_dice)
-                player.add_score(gained_score, user_input)
-                player.check_for_bonus()
+                if player.add_score(gained_score, user_input):
+                    player.check_for_bonus()
+                else:
+                    chosen_check = [13]
+                    current_dice = []
 
             if user_input == "threes":
 
                 current_dice = dice_set.print()
 
                 gained_score = categories.check_threes(current_dice)
-                player.add_score(gained_score, user_input)
-                player.check_for_bonus()
+                if player.add_score(gained_score, user_input):
+                    player.check_for_bonus()
+                else:
+                    chosen_check = [13]
+                    current_dice = []
 
             if user_input == "fours":
 
                 current_dice = dice_set.print()
 
                 gained_score = categories.check_fours(current_dice)
-                player.add_score(gained_score, user_input)
-                player.check_for_bonus()
+                if player.add_score(gained_score, user_input):
+                    player.check_for_bonus()
+                else:
+                    chosen_check = [13]
+                    current_dice = []
 
             if user_input == "fives":
 
                 current_dice = dice_set.print()
 
                 gained_score = categories.check_fives(current_dice)
-                player.add_score(gained_score, user_input)
-                player.check_for_bonus()
+                if player.add_score(gained_score, user_input):
+                    player.check_for_bonus()
+                else:
+                    chosen_check = [13]
+                    current_dice = []
 
             if user_input == "sixes":
 
                 current_dice = dice_set.print()
 
                 gained_score = categories.check_sixes(current_dice)
-                player.add_score(gained_score, user_input)
-                player.check_for_bonus()
+                if player.add_score(gained_score, user_input):
+                    player.check_for_bonus()
+                else:
+                    chosen_check = [13]
+                    current_dice = []
 
             if user_input == "one pair":
 
                 current_dice = dice_set.print()
 
                 gained_score = categories.check_one_pair(current_dice)
-                player.add_score(gained_score, user_input)
+                if player.add_score(gained_score, user_input):
+                    pass
+                else:
+                    chosen_check = [13]
+                    current_dice = []
 
             if user_input == "two pairs":
 
                 current_dice = dice_set.print()
 
                 gained_score = categories.check_two_pairs(current_dice)
-                player.add_score(gained_score, user_input)
+                if player.add_score(gained_score, user_input):
+                    pass
+                else:
+                    chosen_check = [13]
+                    current_dice = []
 
             if user_input == "three of a kind":
 
@@ -143,7 +170,11 @@ class UI:
 
                 gained_score = categories.check_three_of_a_kind(
                     current_dice)
-                player.add_score(gained_score, user_input)
+                if player.add_score(gained_score, user_input):
+                    pass
+                else:
+                    chosen_check = [13]
+                    current_dice = []
 
             if user_input == "four of a kind":
 
@@ -151,21 +182,33 @@ class UI:
 
                 gained_score = categories.check_four_of_a_kind(
                     current_dice)
-                player.add_score(gained_score, user_input)
+                if player.add_score(gained_score, user_input):
+                    pass
+                else:
+                    chosen_check = [13]
+                    current_dice = []
 
             if user_input == "yatzy":
 
                 current_dice = dice_set.print()
 
                 gained_score = categories.check_yatzy(current_dice)
-                player.add_score(gained_score, user_input)
+                if player.add_score(gained_score, user_input):
+                    pass
+                else:
+                    chosen_check = [13]
+                    current_dice = []
 
             if user_input == "full house":
 
                 current_dice = dice_set.print()
 
                 gained_score = categories.check_full_house(current_dice)
-                player.add_score(gained_score, user_input)
+                if player.add_score(gained_score, user_input):
+                    pass
+                else:
+                    chosen_check = [13]
+                    current_dice = []
 
             if user_input == "low straight":
 
@@ -173,7 +216,11 @@ class UI:
 
                 gained_score = categories.check_low_straight(
                     current_dice)
-                player.add_score(gained_score, user_input)
+                if player.add_score(gained_score, user_input):
+                    pass
+                else:
+                    chosen_check = [13]
+                    current_dice = []
 
             if user_input == "high straight":
 
@@ -181,16 +228,24 @@ class UI:
 
                 gained_score = categories.check_high_straight(
                     current_dice)
-                player.add_score(gained_score, user_input)
+                if player.add_score(gained_score, user_input):
+                    pass
+                else:
+                    chosen_check = [13]
+                    current_dice = []
 
             if user_input == "chance":
 
                 current_dice = dice_set.print()
 
                 gained_score = categories.check_chance(current_dice)
-                player.add_score(gained_score, user_input)
+                if player.add_score(gained_score, user_input):
+                    pass
+                else:
+                    chosen_check = [13]
+                    current_dice = []
 
-            if current_dice == []:
+            if current_dice == [] and chosen_check == []:
                 print("Couldn't find the category, please type it again:")
 
             if current_dice:

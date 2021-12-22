@@ -1,5 +1,7 @@
 from ui import UI
 
+# TODO: Playtest through, check if tests working, fix ui loop, fix one pair
+
 
 def main():
     """Starts the app.
