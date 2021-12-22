@@ -44,6 +44,7 @@ class Dice:
         print(self.dice_list)
         choices = []
         indexes = [1, 2, 3, 4, 5]
+        skip = [7]
         user_input = ""
 
         while state:
@@ -52,12 +53,14 @@ class Dice:
             while True:
                 try:
                     user_input = int(input())
+                    if user_input not in indexes and user_input not in skip:
+                        raise Exception("InputError")
                 except:
                     print("Invalid input, try again")
                     continue
                 break
 
-            if user_input not in indexes or user_input in choices:
+            if user_input in skip:
                 break
             choices.append(user_input)
 
