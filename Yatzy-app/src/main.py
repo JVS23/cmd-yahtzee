@@ -1,6 +1,6 @@
 from ui import UI
 
-# TODO: Playtest through, check if tests working, fix one pair
+# TODO: Playtest through, check if tests working
 
 
 def main():

@@ -46,15 +46,22 @@ class Categories:
         return score
 
     def check_one_pair(self, dice_list):
-        # bugged, will fix later
 
         score = 0
 
         dice_list.sort()
-        print(dice_list)
 
         if dice_list[3] == dice_list[4]:
             score = dice_list[4] * 2
+            return score
+        if dice_list[2] == dice_list[3]:
+            score = dice_list[3] * 2
+            return score
+        if dice_list[1] == dice_list[2]:
+            score = dice_list[2] * 2
+            return score
+        if dice_list[0] == dice_list[1]:
+            score = dice_list[1] * 2
             return score
 
         return score
