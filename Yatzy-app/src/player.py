@@ -25,6 +25,15 @@ class Player:
                                 "Full house": 0, "Low straight": 0, "High straight": 0, "Chance": 0}
 
     def add_score(self, score, input):
+        """Adds score to the current players score total and scoreboard.
+
+        Args:
+            score: The amount of score added to the players score.
+            input: The name of the category the player chose.
+
+        Returns:
+            Returns a boolean of True if the category is not chosen yet, False if it is.
+        """
 
         cap_input = str(input).capitalize()
 
@@ -47,14 +56,22 @@ class Player:
             return False
 
     def print_score(self):
+        """Prints the players current score.
+        """
+
         print(self.name, "'s current total score is: ",
               self.total_score, "\n", sep="")
 
     def print_scoreboard(self):
+        """Prints the players whole scoreboard.
+        """
+
         hds = ["Categories", "Score"]
         print(tabulate(self.scoreboard.items(), headers=hds))
 
     def check_for_bonus(self):
+        """Checks if the player is eligible for the bonus points.
+        """
 
         if int((self.scoreboard["Aces"])) + int((self.scoreboard["Twos"])) + int((self.scoreboard["Threes"])) + int((self.scoreboard["Fours"])) + \
                 int((self.scoreboard["Fives"])) + int((self.scoreboard["Sixes"])) >= 63:
@@ -62,5 +79,8 @@ class Player:
             self.add_score(50, "Bonus")
 
     def print_final_score(self):
+        """Prints the final score when the game ends.
+        """
+
         print(self.name, "'s final score is:",
               self.total_score, ", good job!", sep="")

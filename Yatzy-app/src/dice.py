@@ -76,5 +76,10 @@ class Dice:
 
         self.dice_list = []
 
-    def print(self):
+    def dice_return(self):
+        """Returns the current list of dice.
+
+        Returns:
+            List with 5 numbers depicting the 5 dice.
+        """
         return self.dice_list

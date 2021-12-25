@@ -16,6 +16,8 @@
 | 5.12 | 5   | bugfixejä, yleistä logiikan parantelua |
 | 13.12 | 2   | UI:n refaktorointia |
 | 14.12 | 4  | UI:n rakentaminen uudelleen omaan luokkaansa, testien parantelua |
-| 14.12 | 2  | docstringit, bugfixejä, dokumentaation parantelua, pylintin ehdotuksia|
-| 22.12 | 4  | viimeisimmät puutteet hoidettu, ui paranneltu|
-| yht   | 52  |  |
+| 14.12 | 2  | docstringit, bugfixejä, dokumentaation parantelua, pylintin ehdotuksia |
+| 22.12 | 4  | viimeisimmät puutteet hoidettu, ui paranneltu |
+| 23.12 | 2  | testaamista, bugit korjattu |
+| 25.12 | 3  | unittestauksen parantelua |
+| yht   | 57  |  |
