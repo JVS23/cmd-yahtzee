@@ -2,8 +2,6 @@ from dice import Dice
 from scorelogic import Categories
 from player import Player
 
-# TODO  multiple players
-
 
 class UI:
     """A class for generating the actual game loop.
@@ -19,21 +17,47 @@ class UI:
         """Runs the game loop from start to finish.
         """
 
-        player = self.create_player()
         categories = Categories()
         dice_set = Dice()
+        player_list = []
+        turn_index = 0
 
-        for i in range(15):
+        print("How many players do you want? (4 max)")
 
-            print("\n ---Roll number", i + 1, "/ 15---\n")
+        while True:
+            try:
+                player_amount = int(input())
+                if player_amount == 1 or player_amount == 2 or player_amount == 3 or player_amount == 4:
+                    break
+                else:
+                    raise Exception("ValueError")
+            except:
+                print("Error, put in a valid number")
+
+        for i in range(int(player_amount)):
+            player = self.create_player()
+            player_list.append(player)
+
+        turn_amount = int(player_amount) * 15
+
+        for i in range(turn_amount):
+
+            print("\n --- Roll number ", i + 1, " / ", turn_amount, ", ",
+                  player_list[turn_index].name, "'s turn ---\n", sep="")
 
             dice_set.roll()
             dice_set.choose()
             dice_set.choose()
 
-            self.choose_category(player, categories, dice_set)
+            self.choose_category(player_list[turn_index], categories, dice_set)
 
-        player.print_final_score()
+            if turn_index == 0:
+                turn_index = 1
+            else:
+                turn_index = 0
+
+        for i in range(int(player_amount)):
+            player_list[i].print_final_score()
 
     def create_player(self):
         """Asks the user to name a player object, and creates one.
