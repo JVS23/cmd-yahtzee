@@ -6,7 +6,7 @@ Sovelluksen on tarkoitus antaa käyttäjän pelata kaikkien rakastamaa Yatzy-lau
 
 ## Toiminnallisuudet
 
-- Peliä pystyy pelaamaan normaalein säännöin täydellisesti, ja ollakseen commandlinellä
+- Peliä pystyy pelaamaan yllä kuvatuin säännöin, ja ollakseen commandlinellä
 pelattava, erittäin miellyttävällä UI:lla.
 - Pelin alussa voidaan luoda haluttu määrä yhdestä neljään 1-20 merkin pituisen nimisiä käyttäjiä.
 - Pelin lopussa pelaajien tuloksia voidaan vertailla keskenään.

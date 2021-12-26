@@ -27,9 +27,10 @@ poetry install
 poetry run invoke start
 ```
 
-Muistathan myös käyttää tarpeellisia prefixejä komennoissa systeemistäsi riippuen, kuten "python -m" tai "python3 -m"
+Muistathan myös käyttää tarpeellisia prefixejä komennoissa järjestelmäsi asennuksista riippuen, kuten "python -m" tai "python3 -m"
 
-Vaihtoehtoisesti sovellusta voi käyttää Pythonilla avaamalla sen komennolla "main.py" src-hakemistossa. Muistathan asentaa tabulaten pip:in avulla komennolla "pip install tabulate" tässä tapauksessa. **Poetryn kautta runnattuna ohjelman toiminta on lievästi sanottuna kyseenalaista, joten vahva suositukseni on käyttää sovellusta tällä tavalla Pythonilla.**
+Vaihtoehtoisesti sovellusta voi käyttää Pythonilla avaamalla sen komennolla "main.py" src-hakemistossa. Muistathan asentaa tabulaten pip:in avulla komennolla "pip install tabulate" tässä tapauksessa.
+***Poetryn kautta runnattuna ohjelman toiminta on lievästi sanottuna kyseenalaista, joten vahva suositukseni on käyttää sovellusta tällä tavalla Pythonilla.***
 
 
 ## Dokumentaatio 
@@ -39,6 +40,8 @@ Vaihtoehtoisesti sovellusta voi käyttää Pythonilla avaamalla sen komennolla "
 [Vaatimusmäärittely](https://github.com/JVS23/ot-harjoitustyo/blob/master/Yatzy-app/dokumentaatio/vaatimusmaarittely.MD)
 
 [Testausdokumentti](https://github.com/JVS23/ot-harjoitustyo/blob/master/Yatzy-app/dokumentaatio/testaus.MD)
+
+[Arkkitehtuurikuvaus](https://github.com/JVS23/ot-harjoitustyo/blob/master/Yatzy-app/dokumentaatio/arkkitehtuuri.MD)
 
 [Työaikakirjanpito](https://github.com/JVS23/ot-harjoitustyo/blob/master/Yatzy-app/dokumentaatio/tyoaikakirjanpito.MD)
 
