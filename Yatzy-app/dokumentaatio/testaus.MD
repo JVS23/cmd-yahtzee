@@ -2,7 +2,7 @@
 
 ## Yleistä
 
-Ohjelman testaus on toteutettu unittest-frameworkilla, ja devauksen aikana 
+Ohjelman testaus on toteutettu unittest-frameworkilla, ja devauksen aikana pylintillä sekä
 kaikkien rakastamalla print-debuggauksella.
 
 ## Testauskattavuus
