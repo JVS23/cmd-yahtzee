@@ -71,11 +71,15 @@ class Categories:
         score = 0
 
         dice_list.sort()
+        print(dice_list)
+        seen = set()
 
-        if (dice_list[0] == dice_list[1] and dice_list[2] == dice_list[3]) or (dice_list[0] == dice_list[1] and dice_list[3] == dice_list[4]) or (dice_list[1] == dice_list[2] and dice_list[3] == dice_list[4]):
-            score = sum(dice_list) - dice_list[4]
+        if (dice_list[0] == dice_list[1] and dice_list[2] == dice_list[3]) \
+                or (dice_list[0] == dice_list[1] and dice_list[3] == dice_list[4]) \
+                or (dice_list[1] == dice_list[2] and dice_list[3] == dice_list[4]):
 
-            return score
+            temp_list = [x for x in dice_list if x in seen or seen.add(x)]
+            score = (temp_list[0] + temp_list[1]) * 2
 
         return score
 

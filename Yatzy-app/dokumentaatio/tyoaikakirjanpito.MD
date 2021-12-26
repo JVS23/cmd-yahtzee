@@ -21,5 +21,5 @@
 | 23.12 | 2  | testaamista, bugit korjattu |
 | 25.12 | 3  | unittestauksen parantelua |
 | 26.12 | 4  | toiminnallisuus useammalle pelaajalle, playtestaus, bugfixit |
-| 26.12 | 0  | dokumentaation viimeistely |
-| yht   | 61  |  |
+| 26.12 | 3  | dokumentaation viimeistely |
+| yht   | 64  |  |
