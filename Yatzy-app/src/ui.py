@@ -82,7 +82,7 @@ class UI:
 
             print("Player ", i + 1, ", what's your name?", sep="")
             name_input = input()
-            if len(name_input) > 0 and len(name_input) < 20:
+            if len(name_input) > 0 and len(name_input) < 21:
                 new_player = Player(name_input)
                 return new_player
 

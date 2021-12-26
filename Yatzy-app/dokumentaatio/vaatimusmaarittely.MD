@@ -2,9 +2,17 @@
 
 ## Sovelluksen tarkoitus
 
-Sovelluksen on tarkoitus antaa käyttäjän pelata kaikkien rakastamaa Yatzy-lautapeliä tietokoneellansa. Yatzyn säännöt: https://www.lautapeliopas.fi/saannot/yatzy/.
+Sovelluksen on tarkoitus antaa käyttäjän pelata kaikkien rakastamaa Yatzy-lautapeliä tietokoneellansa. Tässä toteutuksessa 1-4 pelaajaa voivat pelata heittäen noppia vuorotellen. [Säännöt](https://fi.wikipedia.org/wiki/Yatzy).
 
-## Suunnitellut toiminnallisuudet
+## Toiminnallisuudet
 
-- Pelin pelaaminen (Tehty)
-- Useiden pelaajien osallistuminen samaan peliin (Tehty)
+- Peliä pystyy pelaamaan normaalein säännöin täydellisesti, ja ollakseen commandlinellä
+pelattava, erittäin miellyttävällä UI:lla.
+- Pelin alussa voidaan luoda haluttu määrä yhdestä neljään 1-20 merkin pituisen nimisiä käyttäjiä.
+- Pelin lopussa pelaajien tuloksia voidaan vertailla keskenään.
+
+## Jatkokehitys
+
+- Peliin voisi mahdollisesti lisätä Yatzyn eri sääntöjä, esimerkiksi pakkoyatzyn missä pisteytysyhdistelmät tulee
+käydä järjestyksessä läpi.
+- Peliin pystyisi myös lisätä käyttäjille lokaalin tietokannan johon tallentaa ennätykset.
