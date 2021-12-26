@@ -82,5 +82,5 @@ class Player:
         """Prints the final score when the game ends.
         """
 
-        print(self.name, "'s final score is:",
+        print(self.name, "'s final score is: ",
               self.total_score, ", good job!", sep="")

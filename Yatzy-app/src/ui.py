@@ -252,5 +252,6 @@ class UI:
 
                 dice_set.dice_list_reset()
                 player.print_scoreboard()
+                print("\n")
                 player.print_score()
                 inputmode = False
