@@ -66,6 +66,7 @@ class Player:
         """Prints the players whole scoreboard.
         """
 
+        print("\n")
         hds = ["Categories", "Score"]
         print(tabulate(self.scoreboard.items(), headers=hds))
 

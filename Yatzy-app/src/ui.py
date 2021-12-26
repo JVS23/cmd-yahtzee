@@ -34,11 +34,11 @@ class UI:
             except:
                 print("Error, put in a valid number")
 
-        for i in range(int(player_amount)):
-            player = self.create_player()
+        for i in range(player_amount):
+            player = self.create_player(i)
             player_list.append(player)
 
-        turn_amount = int(player_amount) * 15
+        turn_amount = player_amount * 15
 
         for i in range(turn_amount):
 
@@ -47,19 +47,21 @@ class UI:
 
             dice_set.roll()
             dice_set.choose()
+            print("\n")
             dice_set.choose()
 
             self.choose_category(player_list[turn_index], categories, dice_set)
 
-            if turn_index == 0:
-                turn_index = 1
-            else:
+            if turn_index + 1 == player_amount:
                 turn_index = 0
+            else:
+                turn_index = turn_index + 1
 
-        for i in range(int(player_amount)):
+        for i in range(player_amount):
+            player_list[i].print_scoreboard()
             player_list[i].print_final_score()
 
-    def create_player(self):
+    def create_player(self, i):
         """Asks the user to name a player object, and creates one.
 
         Returns:
@@ -68,7 +70,7 @@ class UI:
 
         while True:
 
-            print("What's your name?")
+            print("Player ", i + 1, ", what's your name?", sep="")
             name_input = input()
             if len(name_input) > 0 and len(name_input) < 20:
                 new_player = Player(name_input)
@@ -85,7 +87,11 @@ class UI:
             dice_set: the current rolled dice which this turn will be scored on.
         """
 
-        print("Which category do you want to choose?\n")
+        player.print_scoreboard()
+
+        print("\nYour dice: ", dice_set.dice_return())
+
+        print("\nWhich category do you want to choose?\n")
 
         print("aces | twos | threes | fours | fives | sixes")
         print(

@@ -67,7 +67,6 @@ class Dice:
         for i in choices:
             self.reroll(i)
 
-        print("\nYour new dice: ", self.dice_list, "\n")
         return self.dice_list
 
     def dice_list_reset(self):
