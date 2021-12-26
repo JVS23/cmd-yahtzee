@@ -11,7 +11,7 @@
 | 29.11 | 5    | uudet luokat pelaajille ja pisteytykselle |
 | 30.11 | 4    | placeholder-käyttöliittymä mainiin pygamen korvattavaksi |
 | 3.12 | 2    | GUI:n suunnittelu, vaihto tkinterin käyttöön pygamesta. |
-| 4.12 | 4    | tkinterin alku ja tuho |
+| 4.12 | 4    | tkinterin nousu ja tuho |
 | 5.12 | 4   | cmd-käyttöliittymän parantelu (+tabulate) |
 | 5.12 | 5   | bugfixejä, yleistä logiikan parantelua |
 | 13.12 | 2   | UI:n refaktorointia |
@@ -21,4 +21,5 @@
 | 23.12 | 2  | testaamista, bugit korjattu |
 | 25.12 | 3  | unittestauksen parantelua |
 | 26.12 | 4  | toiminnallisuus useammalle pelaajalle, playtestaus, bugfixit |
+| 26.12 | 0  | dokumentaation viimeistely |
 | yht   | 61  |  |

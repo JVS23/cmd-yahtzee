@@ -23,21 +23,7 @@ class UI:
         turn_index = 0
 
         print("How many players do you want? (4 max)")
-
-        while True:
-            try:
-                player_amount = int(input())
-                if player_amount == 1 or player_amount == 2 or player_amount == 3 or player_amount == 4:
-                    break
-                else:
-                    raise Exception("ValueError")
-            except:
-                print("Error, put in a valid number")
-
-        for i in range(player_amount):
-            player = self.create_player(i)
-            player_list.append(player)
-
+        player_amount = self.init_players(player_list)
         turn_amount = player_amount * 15
 
         for i in range(turn_amount):
@@ -60,6 +46,24 @@ class UI:
         for i in range(player_amount):
             player_list[i].print_scoreboard()
             player_list[i].print_final_score()
+
+    def init_players(self, player_list):
+
+        while True:
+            try:
+                player_amount = int(input())
+                if player_amount == 1 or player_amount == 2 or player_amount == 3 or player_amount == 4:
+                    break
+                else:
+                    raise Exception("ValueError")
+            except:
+                print("Error, put in a valid number")
+
+        for i in range(player_amount):
+            player = self.create_player(i)
+            player_list.append(player)
+
+        return player_amount
 
     def create_player(self, i):
         """Asks the user to name a player object, and creates one.
@@ -114,7 +118,7 @@ class UI:
                 if player.add_score(gained_score, user_input):
                     player.check_for_bonus()
                 else:
-                    chosen_check = [13]
+                    chosen_check = [1]
                     current_dice = []
 
             if user_input == "twos":
@@ -125,7 +129,7 @@ class UI:
                 if player.add_score(gained_score, user_input):
                     player.check_for_bonus()
                 else:
-                    chosen_check = [13]
+                    chosen_check = [1]
                     current_dice = []
 
             if user_input == "threes":
@@ -136,7 +140,7 @@ class UI:
                 if player.add_score(gained_score, user_input):
                     player.check_for_bonus()
                 else:
-                    chosen_check = [13]
+                    chosen_check = [1]
                     current_dice = []
 
             if user_input == "fours":
@@ -147,7 +151,7 @@ class UI:
                 if player.add_score(gained_score, user_input):
                     player.check_for_bonus()
                 else:
-                    chosen_check = [13]
+                    chosen_check = [1]
                     current_dice = []
 
             if user_input == "fives":
@@ -158,7 +162,7 @@ class UI:
                 if player.add_score(gained_score, user_input):
                     player.check_for_bonus()
                 else:
-                    chosen_check = [13]
+                    chosen_check = [1]
                     current_dice = []
 
             if user_input == "sixes":
@@ -169,7 +173,7 @@ class UI:
                 if player.add_score(gained_score, user_input):
                     player.check_for_bonus()
                 else:
-                    chosen_check = [13]
+                    chosen_check = [1]
                     current_dice = []
 
             if user_input == "one pair":
@@ -180,7 +184,7 @@ class UI:
                 if player.add_score(gained_score, user_input):
                     pass
                 else:
-                    chosen_check = [13]
+                    chosen_check = [1]
                     current_dice = []
 
             if user_input == "two pairs":
@@ -191,7 +195,7 @@ class UI:
                 if player.add_score(gained_score, user_input):
                     pass
                 else:
-                    chosen_check = [13]
+                    chosen_check = [1]
                     current_dice = []
 
             if user_input == "three of a kind":
@@ -203,7 +207,7 @@ class UI:
                 if player.add_score(gained_score, user_input):
                     pass
                 else:
-                    chosen_check = [13]
+                    chosen_check = [1]
                     current_dice = []
 
             if user_input == "four of a kind":
@@ -215,7 +219,7 @@ class UI:
                 if player.add_score(gained_score, user_input):
                     pass
                 else:
-                    chosen_check = [13]
+                    chosen_check = [1]
                     current_dice = []
 
             if user_input == "yatzy":
@@ -226,7 +230,7 @@ class UI:
                 if player.add_score(gained_score, user_input):
                     pass
                 else:
-                    chosen_check = [13]
+                    chosen_check = [1]
                     current_dice = []
 
             if user_input == "full house":
@@ -237,7 +241,7 @@ class UI:
                 if player.add_score(gained_score, user_input):
                     pass
                 else:
-                    chosen_check = [13]
+                    chosen_check = [1]
                     current_dice = []
 
             if user_input == "low straight":
@@ -249,7 +253,7 @@ class UI:
                 if player.add_score(gained_score, user_input):
                     pass
                 else:
-                    chosen_check = [13]
+                    chosen_check = [1]
                     current_dice = []
 
             if user_input == "high straight":
@@ -261,7 +265,7 @@ class UI:
                 if player.add_score(gained_score, user_input):
                     pass
                 else:
-                    chosen_check = [13]
+                    chosen_check = [1]
                     current_dice = []
 
             if user_input == "chance":
@@ -272,7 +276,7 @@ class UI:
                 if player.add_score(gained_score, user_input):
                     pass
                 else:
-                    chosen_check = [13]
+                    chosen_check = [1]
                     current_dice = []
 
             if current_dice == [] and chosen_check == []:
