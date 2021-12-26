@@ -17,14 +17,16 @@ class Player:
 
         self.name = name
         self.total_score = 0
-        self.scoreboard = {"Aces": 0,  "Twos": 0, "Threes": 0, "Fours": 0, "Fives": 0, "Sixes": 0, "Bonus": 0,
-                           "One pair": 0, "Two pairs": 0, "Three of a kind": 0, "Four of a kind": 0, "Yatzy": 0,
-                           "Full house": 0, "Low straight": 0, "High straight": 0, "Chance": 0}
-        self.scoreboardcheck = {"Aces": 0,  "Twos": 0, "Threes": 0, "Fours": 0, "Fives": 0, "Sixes": 0, "Bonus": 0,
-                                "One pair": 0, "Two pairs": 0, "Three of a kind": 0, "Four of a kind": 0, "Yatzy": 0,
+        self.scoreboard = {"Aces": 0,  "Twos": 0, "Threes": 0, "Fours": 0, "Fives": 0,
+                           "Sixes": 0, "Bonus": 0, "One pair": 0, "Two pairs": 0,
+                           "Three of a kind": 0, "Four of a kind": 0, "Yatzy": 0, "Full house": 0,
+                           "Low straight": 0, "High straight": 0, "Chance": 0}
+        self.scoreboardcheck = {"Aces": 0,  "Twos": 0, "Threes": 0, "Fours": 0,
+                                "Fives": 0, "Sixes": 0, "Bonus": 0, "One pair": 0, "Two pairs": 0,
+                                "Three of a kind": 0, "Four of a kind": 0, "Yatzy": 0,
                                 "Full house": 0, "Low straight": 0, "High straight": 0, "Chance": 0}
 
-    def add_score(self, score, input):
+    def add_score(self, score, user_input):
         """Adds score to the current players score total and scoreboard.
 
         Args:
@@ -35,7 +37,7 @@ class Player:
             Returns a boolean of True if the category is not chosen yet, False if it is.
         """
 
-        cap_input = str(input).capitalize()
+        cap_input = str(user_input).capitalize()
 
         if cap_input in self.scoreboard.keys():
             if int((self.scoreboardcheck[cap_input])) == 0:
@@ -74,7 +76,8 @@ class Player:
         """Checks if the player is eligible for the bonus points.
         """
 
-        if int((self.scoreboard["Aces"])) + int((self.scoreboard["Twos"])) + int((self.scoreboard["Threes"])) + int((self.scoreboard["Fours"])) + \
+        if int((self.scoreboard["Aces"])) + int((self.scoreboard["Twos"])) + \
+            int((self.scoreboard["Threes"])) + int((self.scoreboard["Fours"])) + \
                 int((self.scoreboard["Fives"])) + int((self.scoreboard["Sixes"])) >= 63:
             print("You got the bonus! + 50 points\n")
             self.add_score(50, "Bonus")

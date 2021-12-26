@@ -1,7 +1,5 @@
 from ui import UI
 
-# TODO: Playtest through, check if tests working, documentation, release
-
 
 def main():
     """Starts the app.

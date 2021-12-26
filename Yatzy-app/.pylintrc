@@ -589,5 +589,7 @@ min-public-methods=0
 
 # Exceptions that will emit a warning when being caught. Defaults to
 # "BaseException, Exception".
+
+ignore=CVS,tests, ui.py
 overgeneral-exceptions=BaseException,
                        Exception

@@ -23,11 +23,12 @@ class UI:
         turn_index = 0
 
         print("How many players do you want? (4 max)")
-        player_amount = self.init_players(player_list)
+        self.init_players(player_list)
+        player_amount = len(player_list)
+
         turn_amount = player_amount * 15
 
         for i in range(turn_amount):
-
             print("\n --- Roll number ", i + 1, " / ", turn_amount, ", ",
                   player_list[turn_index].name, "'s turn ---\n", sep="")
 
@@ -42,17 +43,24 @@ class UI:
                 turn_index = 0
             else:
                 turn_index = turn_index + 1
-
         for i in range(player_amount):
             player_list[i].print_scoreboard()
             player_list[i].print_final_score()
 
     def init_players(self, player_list):
+        """Creates a list for player objects.
+
+        Args:
+            player_list: List for the players.
+
+        Raises:
+            Exception: ValueError, if the user inputs a wrong kind of value.
+        """
 
         while True:
             try:
                 player_amount = int(input())
-                if player_amount == 1 or player_amount == 2 or player_amount == 3 or player_amount == 4:
+                if player_amount in (1, 2, 3, 4):
                     break
                 else:
                     raise Exception("ValueError")
@@ -62,8 +70,6 @@ class UI:
         for i in range(player_amount):
             player = self.create_player(i)
             player_list.append(player)
-
-        return player_amount
 
     def create_player(self, i):
         """Asks the user to name a player object, and creates one.
