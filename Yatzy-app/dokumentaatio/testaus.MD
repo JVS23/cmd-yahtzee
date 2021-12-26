@@ -12,7 +12,7 @@ Tästä on jätetty pois käyttöliittymä sekä testaustiedostot. Testausta oli
 suuremman haarautumakattavuuden saavuttamiseksi, mutta tietokantojen ja käyttäjäkirjautumisten
 loistaessa poissaoloaan se olisi melko turhaa, sillä realistisesti hyödyllistä testattavaa ei juurikaan ole.
 
-![](./media/covreport.jpg)
+![](./media/covreport.JPG)
 
 ## Järjestelmätestaus
 

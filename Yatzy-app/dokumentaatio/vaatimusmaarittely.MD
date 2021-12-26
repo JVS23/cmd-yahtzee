@@ -7,4 +7,4 @@ Sovelluksen on tarkoitus antaa käyttäjän pelata kaikkien rakastamaa Yatzy-lau
 ## Suunnitellut toiminnallisuudet
 
 - Pelin pelaaminen (Tehty)
-- Useiden pelaajien osallistuminen samaan peliin
+- Useiden pelaajien osallistuminen samaan peliin (Tehty)

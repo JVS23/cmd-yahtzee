@@ -34,7 +34,7 @@ Vaihtoehtoisesti sovellusta voi käyttää Pythonilla avaamalla sen komennolla "
 
 ## Dokumentaatio 
 
-[Käyttöohje](https://github.com/JVS23/ot-harjoitustyo/blob/master/Yatzy-app/dokumentaatio/kayttoohje.MD)
+[Käyttöohje](https://github.com/JVS23/ot-harjoitustyo/blob/master/Yatzy-app/dokumentaatio/kayttoohje.md)
 
 [Vaatimusmäärittely](https://github.com/JVS23/ot-harjoitustyo/blob/master/Yatzy-app/dokumentaatio/vaatimusmaarittely.MD)
 
