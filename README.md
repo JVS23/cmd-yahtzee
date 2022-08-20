@@ -17,7 +17,7 @@ Sovellus on kehitetty sekä testattu Python 3.8:lla.
 
 Lataa uusin release [täältä](https://github.com/JVS23/ot-harjoitustyo/releases) valitsemassasi muodossa Assets-osiosta.
 
-Sovellusta voi käyttää Pythonilla avaamalla sen komennolla "main.py" src-hakemistossa. Muistathan asentaa tabulaten esim. pip:in avulla komennolla "pip install tabulate" tässä tapauksessa.
+Sovellusta voi käyttää Pythonilla runnaamalla tiedoston main.py. Muistathan asentaa tabulaten esim. pip:in avulla komennolla "pip install tabulate" tässä tapauksessa.
 
 Sovellusta voi myös käyttää Poetryn kautta suorittamalla seuraavan komennon juurihakemistossa (Varmistathan, että sinulla on poetry asennettuna):
 ```bash
