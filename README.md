@@ -15,9 +15,11 @@ Sovellus on kehitetty sekä testattu Python 3.8:lla.
 
 ## Asennus
 
-1. Lataa uusin release [täältä](https://github.com/JVS23/ot-harjoitustyo/releases) valitsemassasi muodossa Assets-osiosta.
+Lataa uusin release [täältä](https://github.com/JVS23/ot-harjoitustyo/releases) valitsemassasi muodossa Assets-osiosta.
 
-2. Suorita seuraava komento sovelluksen juurihakemistossa (Varmistathan, että sinulla on poetry asennettuna):
+Sovellusta voi käyttää Pythonilla avaamalla sen komennolla "main.py" src-hakemistossa. Muistathan asentaa tabulaten esim. pip:in avulla komennolla "pip install tabulate" tässä tapauksessa.
+
+Sovellusta voi myös käyttää Poetryn kautta suorittamalla seuraavan komennon juurihakemistossa (Varmistathan, että sinulla on poetry asennettuna):
 ```bash
 poetry install
 ```
@@ -29,7 +31,6 @@ poetry run invoke start
 
 Muistathan myös käyttää tarpeellisia prefixejä komennoissa järjestelmäsi asennuksista riippuen, kuten "python -m" tai "python3 -m"
 
-Vaihtoehtoisesti sovellusta voi käyttää Pythonilla avaamalla sen komennolla "main.py" src-hakemistossa. Muistathan asentaa tabulaten pip:in avulla komennolla "pip install tabulate" tässä tapauksessa.
 ***Poetryn kautta runnattuna ohjelman toiminta on lievästi sanottuna kyseenalaista, joten vahva suositukseni on käyttää sovellusta tällä tavalla Pythonilla.***
 
 
@@ -42,8 +43,6 @@ Vaihtoehtoisesti sovellusta voi käyttää Pythonilla avaamalla sen komennolla "
 [Testausdokumentti](https://github.com/JVS23/ot-harjoitustyo/blob/master/Yatzy-app/dokumentaatio/testaus.MD)
 
 [Arkkitehtuurikuvaus](https://github.com/JVS23/ot-harjoitustyo/blob/master/Yatzy-app/dokumentaatio/arkkitehtuuri.MD)
-
-[Työaikakirjanpito](https://github.com/JVS23/ot-harjoitustyo/blob/master/Yatzy-app/dokumentaatio/tyoaikakirjanpito.MD)
 
 
 ## Testaus 
