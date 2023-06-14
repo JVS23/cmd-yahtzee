@@ -29,9 +29,8 @@ poetry install
 poetry run invoke start
 ```
 
-Muistathan myös käyttää tarpeellisia prefixejä komennoissa järjestelmäsi asennuksista riippuen, kuten "python -m" tai "python3 -m"
 
-***Poetryn kautta runnattuna ohjelman toiminta on lievästi sanottuna kyseenalaista, joten vahva suositukseni on käyttää sovellusta tällä tavalla Pythonilla.***
+***Poetryllä runnattuna ohjelman toiminta on lievästi sanottuna kyseenalaista, joten vahva suositukseni on käyttää sovellusta suoraan commandlinelta Pythonilla.***
 
 
 ## Dokumentaatio 
